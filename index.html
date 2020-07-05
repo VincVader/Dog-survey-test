@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+<div id="container">
+  <header id="header">
+    <h1 id="title">Dog owners Survey</h1>
+    <p id="description">Thank you for taking the time to fill in the survey form</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+       type="text"
+       name="name"
+       id="name"
+       class="form-control"      
+       placeholder="Enter your name"      
+       required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+       type="email"
+       name="email"
+       id="email" 
+       class="form-control"      
+       placeholder="Enter your email"
+       required      
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label>
+      <input
+       type="number"
+       name="age"
+       id="number"
+       class="form-control"
+       min="7"
+       max="100"      
+       placeholder="Enter your age"
+       required      
+      />
+    </div>
+      <p>What breed of dog do you have</p>
+      <select name="breed" id="dropdown" class="form-control" required>
+        <option value="husky">Siberian Husky</option>
+        <option value="pug">Pug</option>
+        <option value="bulldog">Bulldog</option>
+        <option value="retrieverL">Labrador Retriever</option>
+        <option value="retrieverG">Golden Retriever</option>
+        <option value="shepherdG">German Shepherd</option>
+        <option value="poodle">Poodle</option>
+        <option value="beagle">Beagle</option>
+        <option value="none">None of this</option>
+      </select>
+    <div id="radio-button" class="form-group">
+      <p>How difficult it is for you to live with a dog</p>
+      <label>
+        <input
+          name="difficulty"
+          value="veryEasy"
+          type="radio"
+          class="input-radio"
+        />Very easy</label
+      >
+      <label>
+        <input
+          name="difficulty"
+          value="easy"
+          type="radio"
+          class="input-radio"
+        />Easy</label
+      >
+      <label>
+        <input
+          name="difficulty"
+          value="medium"
+          type="radio"
+          class="input-radio"
+        />Medium</label
+      >
+      <label>
+        <input
+          name="difficulty"
+          value="aLDif"
+          type="radio"
+          class="input-radio"
+        />a little difficult</label
+      >
+      <label>
+        <input
+          name="difficulty"
+          value="dif"
+          type="radio"
+          class="input-radio"
+        />difficult</label
+      >
+      <label>
+        <input
+          name="difficulty"
+          value="veryDif"
+          type="radio"
+          class="input-radio"
+        />Very difficult<label
+      >
+    </div>
+    <div class="form-group">
+      <p>The best dog breeds in your opinion</p>
+      <label>
+        <input
+        name="prefer"
+        value="husky"
+        type="checkbox"
+        class="input-checkbox"        
+        />Siberian Husky</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="beagle"
+        type="checkbox"
+        class="input-checkbox"        
+        />Beagle</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="shepherdG"
+        type="checkbox"
+        class="input-checkbox"        
+        />German Shepherd</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="retrieverG"
+        type="checkbox"
+        class="input-checkbox"        
+        />Golden Retriever</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="bulldog"
+        type="checkbox"
+        class="input-checkbox"        
+        />Bulldog</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="bulldogF"
+        type="checkbox"
+        class="input-checkbox"        
+        />French Bulldog</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="pug"
+        type="checkbox"
+        class="input-checkbox"        
+        />Pug</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="shibaInu"
+        type="checkbox"
+        class="input-checkbox"        
+        />Shiba Inu</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="poodle"
+        type="checkbox"
+        class="input-checkbox"        
+        />Poodle</label
+      >
+      <label>
+        <input
+        name="prefer"
+        value="rottweller"
+        type="checkbox"
+        class="input-checkbox"        
+        />Rottweller</label
+      >
+            
+    </div>  
+      <div class="form-group">
+      <p>Tell us about the funniest story related to your pet</p>
+        <textarea
+        name="comment"
+        id="textarea"
+        class="input-textarea"
+        placeholder="Enter your comment here"          
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button
+        type="submit"
+        class="submit-button"
+        id="submit"  
+        >Submit</button>
+        
+      </div>  
+        
+      
+      
+   
+    
+    
+  </form>
+
+  
+  
+  
+</div>
+<script src='script/main.js'></script>
+</body>
+</html>
